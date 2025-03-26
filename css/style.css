@@ -107,8 +107,37 @@ z-index: 999;
     display: flex;
 }
 
-.class{
+.products{
     justify-content: right;
+    align-content: end;
+    display: grid;
+
 }
 
+.main-body h1{
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    line-height: 1.2;
 
+}
+
+p{
+    color: gray;
+    letter-spacing: 0.005em;
+    max-width: 35rem;
+    font-size: 1.2rem;
+}
+
+.shop{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container img{
+    width: 100px;
+    margin-left: 20%;
+    display: flex;
+    min-width: 20rem;
+}
