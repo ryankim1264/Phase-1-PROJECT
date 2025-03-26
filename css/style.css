@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family:poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #180909;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background:rgb(117, 163, 153);
+    padding: 10px;
+}
+
+nav a {
+    color: #35022e;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header {
+ background: rgb(43, 6, 18);
+ color: rgb(255, 255, 255);
+  text-align: center;
+ padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+    }
+
+.main-body {
+max-width: 900px;
+margin: 20px auto;
+ padding: 20px;
+ background: white;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+ }
+
+    h1, h2, h3 {
+        color: black;
+    }
+    
+    #products {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+ #products section {
+margin: 10px 0;
+padding: 15px;
+background: #e6f2ff;
+border-left: 5px solid rgb(178, 231, 235);
+border-radius: 5px; }
+    
+
