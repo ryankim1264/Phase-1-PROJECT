@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 if ( newVotes < 0) {
                     return;
                 }
-                // Update votes via PATCH request
                 fetch(`${base_url}/${character.id}`, {
                     method: 'PATCH',
                     headers: {
