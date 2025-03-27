@@ -21,6 +21,18 @@ fetch(base_url)
     
     const rating =document.createElement("input");
     rating.value= character.rating;
+    rating.min = "0";
+    rating.type="number";
+    rating.classList.add("add-rating")
+
+    const submit = document.createElement("button");
+    submit.textContent= "Add"
+    submit.classList.add("submit-rating")
+
+    submit.addEventListener('click', ()=>{
+         
+    })
+
 
     characterContent.appendChild(characterImage)
     characterContent.appendChild(name)
@@ -28,6 +40,8 @@ fetch(base_url)
     characterInfo.appendChild(characterContent)
 })
     });
+
+
 
 
 
