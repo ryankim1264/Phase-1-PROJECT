@@ -132,9 +132,10 @@ p{
     font-size: 1.2rem;
 }
 
-.shop{
+.memberInfo{
     display: flex;
     margin-left: 10%;
+    
 }
 
 .container img{
