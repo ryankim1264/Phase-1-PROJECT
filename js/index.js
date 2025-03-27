@@ -8,26 +8,29 @@ const characterInfo=document.getElementById("characterInfo")
 
 fetch(base_url)
 .then(res=> res.json())
-.then(chaeacters=>{
-    chaeacters.forEach(character => {
+.then(characters => {
+    characters.forEach(character => {
         const characterContent = document.createElement('div')
         const characterImage = document.createElement("img");
-
     characterImage.src=character.image;
     characterImage.alt=character.image;
     characterImage.classList.add("character-image");
 
-    const name = document.createElement("name");
+    const name = document.createElement("h3");
     name.textContent=character.name;
     
-    const votes =document.createElement("input");
-    votes.value= character.votes;
+    const rating =document.createElement("input");
+    rating.value= character.rating;
 
     characterContent.appendChild(characterImage)
     characterContent.appendChild(name)
-    characterContent.appendChild(votes)
+    characterContent.appendChild(rating)
     characterInfo.appendChild(characterContent)
 })
     });
+
+
+
+    
     
 
