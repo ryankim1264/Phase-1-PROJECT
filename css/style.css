@@ -135,6 +135,7 @@ p{
 .memberInfo{
     display: flex;
     margin-left: 10%;
+
     
 }
 
@@ -199,4 +200,17 @@ p{
 }
 
 
-
+.character-image {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 15px wheat;
+    zoom: 3;
+    
+}
+.add-votes {
+    width: 70px;
+    margin-right: 10px;
+}
