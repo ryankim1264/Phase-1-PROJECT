@@ -11,10 +11,10 @@ fetch(base_url)
 .then(chaeacters=>{
     chaeacters.forEach(character => {
         const characterContent = document.createElement('div')
-    });
-    const characterImage = document.createElement("div");
+        const characterImage = document.createElement("img");
+
     characterImage.src=character.image;
-    characterImage.alt=character.name;
+    characterImage.alt=character.image;
     characterImage.classList.add("character-image");
 
     const name = document.createElement("name");
@@ -28,4 +28,6 @@ fetch(base_url)
     characterContent.appendChild(votes)
     characterInfo.appendChild(characterContent)
 })
+    });
+    
 

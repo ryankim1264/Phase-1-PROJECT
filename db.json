@@ -1,40 +1,42 @@
-{
-    "characters": [
+
+    {
+      "characters": [
         {
-            "id": 1,
-            "name": "SOI",
-            "image": "file:///home/ryan-mugei/Downloads/SOI.jpeg",
-            "votes": 0
-          },
-          {
-            "id": 2,
-            "name": "WAMAITHA",
-            "image": "file:///home/ryan-mugei/Downloads/WAMAITHA.jpeg",
-            "votes": 0
-          },
-          {
-            "id": 3,
-            "name": "SMOOTHSTEPP",
-            "image": "file:///home/ryan-mugei/Downloads/SMOOTHSTEPPA.jpeg",
-            "votes": 0
-          },
-          {
-            "id": 4,
-            "name": "MIKA",
-            "image": "file:///home/ryan-mugei/Downloads/MIKA.jpeg",
-            "votes": 0
-          },
-          {
-            "id": 5,
-            "name": "FYEE",
-            "image": "file:///home/ryan-mugei/Downloads/FYEE.jpeg",
-            "votes": 0
-          },
-          {
-            "id": 6,
-            "name": "MOJOJO",
-            "image": "file:///home/ryan-mugei/Downloads/MOJOJO.jpeg",
-            "votes": 0
-          }
-    ]
-}
+          "id": 1,
+          "name": "SOI",
+          "image": "SOI.jpeg",
+          "votes": 0
+        },
+        {
+          "id": 2,
+          "name": "WAMAITHA",
+          "image": "WAMAITHA.jpeg",
+          "votes": 0
+        },
+        {
+          "id": 3,
+          "name": "SMOOTHSTEPPA",
+          "image": "SMOOTHSTEPPA.jpeg",
+          "votes": 0
+        },
+        {
+          "id": 4,
+          "name": "MIKA",
+          "image": "MIKA.jpeg",
+          "votes": 0
+        },
+        {
+          "id": 5,
+          "name": "FYEE",
+          "image": "FYEE.jpeg",
+          "votes": 0
+        },
+        {
+          "id": 6,
+          "name": "MOJOJO",
+          "image": "MOJOJO.jpeg",
+          "votes": 0
+        }
+      ]
+    }
+
