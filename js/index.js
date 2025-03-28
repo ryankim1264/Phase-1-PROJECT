@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const name = document.createElement("h3");
             name.textContent = character.name;
+            name.classList.add("character-name")
     const votes = document.createElement("input");
          votes.value = character.votes || 0;
          votes.type = "number";
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const submit = document.createElement("button");
             submit.textContent = "Add Votes";
-            submit.classList.add("submit-votes");
+            submit.classList.add("submit-votes")
 
             submit.addEventListener('click', () => {
                 const newVotes = parseFloat(votes.value);
