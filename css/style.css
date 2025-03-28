@@ -214,37 +214,53 @@ p{
 .add-votes {
     background-color: #a7a7a7;
     color: black;
-    padding: 0.3rem 2rem;
     border-radius: 50px;
-    border: none;
-    font-size: 0.9rem;
-    font-weight:500;
-    cursor: pointer;
-    margin: 3rem;
-    justify-content: center;
-    align-items: center;
+    width: 60px;
+    height: 30px;
+    text-align: center; /* Center input content */
+    font-size: 16px;
+    border: 1px;
+    margin: 10px 0;
 }
 
-.submit-votes{
-    background-color: #a7a7a7;
-    color: black;
-    padding: 0.3rem 2rem;
-    border-radius: 50px;
+.submit-votes {
+    padding: 10px 15px;
+    background: gray;
+    color: white;
     border: none;
-    font-size: 0.8rem;
-    font-weight:500;
+    border-radius: 5px;
     cursor: pointer;
-    margin: 3rem;
-    justify-content: center;
-    align-items: center;
-
+    font-size: 14px;
+    text-align: center;
+    transition: background 0.3s;
 }
 #characterInfo{
-    display: flex;
-    flex-direction: column; 
-    align-items: flex-end; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
     padding: 20px;
-    width: 40%; 
-    margin-left: auto;
+    width: 80%; 
+    margin: 0 auto; 
     
+}
+
+.character-info{
+    background:inherit;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.character-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
 }

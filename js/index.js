@@ -17,6 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const name = document.createElement("h3");
             name.textContent = character.name;
             name.classList.add("character-name")
+
+            const voteDisplay = document.createElement("p");
+            voteDisplay.textContent = `Votes: ${character.votes || 0}`;
+            voteDisplay.classList.add("vote-display");
+
     const votes = document.createElement("input");
          votes.value = character.votes || 0;
          votes.type = "number";
@@ -42,7 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 })
                 .then(response => response.json())
                 .then(updatedCharacter => {
-                    alert(`Votes for ${character.name} updated successfully!`);
+                    voteDisplay.textContent = `Votes: ${updatedCharacter.votes}`;
+                    voteDisplay.classList.add("vote-highlight");
+                    setTimeout(() => voteDisplay.classList.remove("vote-highlight"), 1000);
                 })
                 .catch(error => {
                     console.error('Error updating votes:', error);
@@ -53,11 +60,12 @@ document.addEventListener("DOMContentLoaded", () => {
             characterContent.appendChild(name);
             characterContent.appendChild(votes);
             characterContent.appendChild(submit);
-
+            characterContent.appendChild(voteDisplay);
             characterInfo.appendChild(characterContent);
         });
     })
     .catch(error => {
         console.error("error");
     });
+
 });
